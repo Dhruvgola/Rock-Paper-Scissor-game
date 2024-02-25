@@ -94,10 +94,8 @@ img {
 
   .choices {
     flex-direction: row;
-    margin-top: 150px;
-    gap: 100px;
-    position: absolute;
-    top: 120px;
+    margin-top: 23px;
+    gap: 2px;
   }
 
   .choice {
