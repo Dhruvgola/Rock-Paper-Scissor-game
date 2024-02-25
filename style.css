@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  background: linear-gradient(135deg, #280A33, #07041E);
+  color: #F2E4D7;
+  text-align: center;
+  height: 100%;
+  line-height: 5rem;
+}
+
+.choice {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.choice:hover {
+  cursor: pointer;
+  border: 5px solid #0f0f0f; 
+  transform: scale(1.1);
+}
+
+.choice:hover img {
+  border-color: #0f0f0f; 
+  height: 145px;
+  width: 145px;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.choices {
+  /* background-color: #FFB874; */
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 2rem;
+}
+
+.score-board {
+  /* background-color: #4C7A62; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+.score p {
+  display: flex;
+  justify-content: center;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+.msg-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+#msg {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .choices {
+    flex-direction: row;
+    margin-top: 150px;
+    gap: 100px;
+    position: absolute;
+    top: 120px;
+  }
+
+  .choice {
+    height: 90px;
+    width: 90px;
+  }
+
+  .choice:hover img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  img{
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  }
+
+  .score-board {
+    flex-direction: row;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    gap: 2rem;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 3rem;
+  }
+
+  .msg-container {
+    margin-top: 3rem;
+  }
+
+  #msg {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .choices {
+    margin-top: 50px;
+  }
+
+  .score-board {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 5rem;
+  }
+}
